@@ -1,0 +1,205 @@
+/* Style utama untuk pembungkus input nomor HP */
+  .phone-input {
+    display: flex; /* Membuat elemen di dalamnya sejajar (horizontal) */
+    align-items: center; /* Vertikal rata tengah */
+    border: 1px solid #ccc; /* Border abu-abu */
+    padding: 5px; /* Ruang dalam atas/bawah 10px, kiri/kanan 12px */
+    border-radius: 8px; /* Membuat ujung kotak membulat */
+    width: calc(100% - 20px);
+    background-color: #fff; /* Latar belakang putih */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sedikit bayangan agar terlihat mengambang */
+    box-sizing: border-box;   /* ✅ Supaya padding tidak menambah lebar */
+    
+  }
+  
+  /* Style untuk bagian kode negara (bendera + teks) */
+  .country-code {
+    display: flex; /* Supaya gambar dan teks horizontal */
+    align-items: center; /* Vertikal rata tengah */
+    gap: 6px; /* Jarak antar elemen di dalamnya */
+    margin-right: 10px; /* Jarak ke input */
+    font-weight: 500; /* Ketebalan teks sedang */
+    color: #333; /* Warna teks abu tua */
+  }
+  
+  /* Ukuran gambar bendera */
+  .country-code img {
+    width: 20px;
+    height: auto;
+    border-radius: 2px; /* Sedikit sudut membulat agar terlihat rapi */
+  }
+  
+  /* Input nomor HP */
+  .phone-input input {
+    border: none; /* Hilangkan border default */
+    outline: none; /* Hilangkan garis biru saat fokus */
+    font-size: 1rem; /* Ukuran teks standar */
+    flex: 1; /* Agar input mengambil sisa ruang */
+  }
+
+
+
+.wrapper-container {
+  margin: 0;
+  padding: 5em;
+  height: 100vh;
+  background-color: #fffae6;
+  box-sizing: border-box;
+  display: flex;                  /* Aktifkan Flexbox */
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;        /* Tengahkan isi secara horizontal */
+  /* width: 1440px; */
+  top: 3678px;
+  left: -21053px;
+
+}
+
+.logo{
+  max-height: 50%;
+  background-color: white;
+  padding: 5px;
+  min-width: 100vw;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+.logo-img {
+  box-sizing: border-box;
+  max-width: 30%;  /* Lebar maksimal sesuai kontainer */
+  height: auto; /* Tinggi otomatis */
+  position: relative;
+  display: flex;
+  
+}
+
+.wrapper-form {
+  position: relative;           /* Posisi absolut untuk menempatkan form di tengah */
+  width: 90%;
+  max-width: 590px;              /* Lebar maksimal form */
+  max-height: 893px;            /* Tinggi minimal form */
+  background-color: #fff;       /* Latar belakang putih */
+  border-radius: 4px;           /* Ujung membulat */
+  border-width: 1px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sedikit bayangan agar terlihat mengambang */
+  margin: auto 5% 4% 5%;
+  padding: 36px;
+}
+
+@media (max-width: 590px) {
+  .wrapper-form {
+    padding: 2rem;
+    margin: 5px 16px;
+  }
+}
+
+.header{
+  display: block;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400px;
+  font-size: 32px;
+  color: #222325;
+  line-height: 110.00000000000001%;
+  text-align: center;
+  width: 246;
+  height: 35;
+}
+
+h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+  color: #333333AD;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Jarak antar elemen di dalamnya */
+  margin : 10px 0px 0px 0px;
+}
+
+.requirment {
+  color: red;
+  font-size: 16px;
+  margin-left: 0px;
+}
+
+input, button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.password-container {
+  position: relative;
+  align-items: center;
+}
+
+#eyeIcon {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  top: 50%;
+}
+
+.Masuk {
+  width: calc(100% - 20px);
+  height: 42px;
+  border-radius: 10px;
+  color: #3ecf4c;
+  font-family: Poppins;
+  background: #E2FCD9CC;
+}
+
+.Daftar {
+  width: calc(100% - 20px);
+  height: 42px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: Poppins;
+  background: #3ecf4c;
+}
+
+.divider, .atau {
+  top: 1em;
+}
+
+.divider {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  line-height: 0.1em;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+} 
+
+.atau  {
+  padding: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  color: #4A505C;
+  background: white;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  top: -1.1em;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Videobelajar</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my style -->
+    <link rel="stylesheet" type="text/css" href="Masuk.css" />
+  </head>
+
+  <body>
+    <div class="logo-kanan-atas">
+      <img src="assets/Logo.png" alt="Logo Videobelajar" class="logo-img" />
+    </div>
+
+    <div class="login-container">
+      <h1>Masuk Ke Akun</h1>
+      <h2>Yuk, lanjutin belajarmu di Videobelajar.</h2>
+      <form onsubmit="return peringatan()" action="index.html">
+        <label for="email">E-mail <span class="requirment">*</span></label>
+        <input type="email" id="email" required />
+
+        <label for="password">Kata Sandi <span class="requirment">*</span></label>
+        <div class="password-container">
+          <input
+            type="password"
+            id="password"
+            required
+          />
+          <img id="eyeIcon" onclick="togglePassword()"
+            src="assets/mideye.png"
+            alt="Lihat Password"
+          />
+        </div>
+
+        <div class="lupa-password">
+          <a href="lupa.html">Lupa Password?</a>
+        </div>
+        
+          <button 
+            type="submit"
+            class="masuk">
+            Masuk
+          </button>
+          <button
+            type="button"
+            onclick="location.href='Daftar.html'"
+            class="Daftar">
+            Daftar
+          </button>
+          <div class="divider">
+            <span class="atau">atau</span>
+          </div>
+          <button
+            type="button"
+            onclick="loginWithGoogle()"
+            class="google-login">
+            <img
+              src="assets/logos_google-icon.png"
+              alt="Google Logo"
+              style="width: 20px; vertical-align: middle"
+            />
+            Masuk dengan Google
+          </button>
+        
+      </form>
+    </div>
+  </body>
+</html>

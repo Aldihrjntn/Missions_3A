@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Videobelajar</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my style -->
+    <link rel="stylesheet" type="text/css" href="Daftar.css" />
+  </head>  
+  <body>
+    <div class="wrapper-container">
+      <div class="logo">
+        <img src="assets/Logo.png" alt="Logo Videobelajar" class="logo-img" />
+      </div>
+      
+      <!-- wrapped container -->
+      <main class="wrapper-form">
+        <header class="header">
+          <h1>Pendaftaran Akun</h1>
+          <h2>Yuk, daftarkan akunmu sekarang juga!</h2>
+        </header><br>
+
+          <!-- form input -->
+        <form onsubmit="return peringatan()" class="form-input" action="index.html">
+          <div>
+            <label for="Nama-Lengkap">Nama Lengkap <span class="requirment">*</span></label><br>
+            <input type="text" id="Nama-Lengkap" name="Nama-Lengkap" required />
+          </div>
+        
+          <div>
+            <label for="E-mail">E-mail <span class="requirment">*</span></label><br>
+            <input type="email" id="E-mail" name="E-mail" required/>
+          </div>
+        
+
+          <!-- Wrapper untuk input no HP  -->
+          <div class="phone-input">
+            <label for="NoHP">No. HP <span class="requirment">*</span></label>
+            <div class="country-code">
+              <img src="assets/INA.png" alt="ID" />
+              <select name="countryCode" id="countryCode">
+                <option value="62">+62</option>
+              </select>
+              <input type="tel" id="NoHP" name="NoHP" required />
+            </div>
+          </div>
+    
+
+
+          <div>
+          </div>
+        
+          <div class="password-container">
+            <label for="password">Kata Sandi <span class="requirment">*</span></label>
+            <div>
+              <input type="password" id="password" name="password" required/>
+              <img id="eyeIcon" onclick="togglePassword()" src="assets/mideye.png" alt="tampilkan kata sandi" />
+            </div>
+          </div>
+
+          <div class="password-container">
+            <label for="konfirmasiPassword">Konfirmasi Kata Sandi <span class="requirment">*</span></label>
+            <div>
+              <input type="password" id="konfirmasiPassword" name="konfirmasiPassword" required/>
+              <img id="eyeIcon" onclick="togglePassword()" src="assets/mideye.png" alt="tampilkan kata sandi" />
+            </div>
+          </div>
+    <!-- form input end -->
+
+    <!-- button -->
+          <div>
+            <button type="submit" class="Daftar">Daftar</button>
+            <button type="button" onclick="location.href='masuk.html'" class="Masuk">Masuk</button>
+            <div class="divider">
+              <span class="atau">atau</span>
+            </div>
+            <button type="button"
+            onclick="loginWithGoogle()"
+            class="google-login">
+            <img 
+              src="assets/logos_google-icon.png"
+              alt="Google Logo"
+              style="width: 20px; vertical-align: middle"/>
+                Masuk dengan Google
+              </button>
+          </div>
+    <!-- button end -->
+        </form>
+      </main>
+    </div>
+<!-- wrapped container end -->
+  </body>
+</html>

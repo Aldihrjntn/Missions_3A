@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  /* font-family: Arial, sans-serif; */
+  background-color: #fffae6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.logo-kanan-atas {
+  background-color: white;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000; 
+}
+
+.logo-img {
+  height: 50px;
+}
+
+.login-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 590px;
+  min-height: 617px;
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 36px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+@media (max-width: 590px) {
+  .login-container {
+    padding: 2rem;
+    margin: 0 16px;
+  }
+}
+
+.requirment {
+  color: red;
+  font-size: 16px;
+  margin-left: 0px;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #222325;
+  line-height: 110.00000000000001%;
+  text-align: center;
+  width: 246;
+  height: 35;
+
+}
+
+h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333AD;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+label {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+.lupa-password a{
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration:none;
+  text-align: right;
+  color: #4A505C;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  width: calc(100% - 20px);
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  
+}
+
+input, 
+button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#eyeIcon {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+}
+
+.masuk {
+  width: calc(100% - 20px);
+  height: 42px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: Poppins;
+  background: #3ecf4c;
+}
+
+.Daftar {
+  width: calc(100% - 20px);
+  height: 42px;
+  border-radius: 10px;
+  color: #3ecf4c;
+  font-family: Poppins;
+  background: #E2FCD9CC;
+  ;
+}
+
+.divider, .atau {
+  top: 1em;
+}
+
+.divider {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  line-height: 0.1em;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+} 
+
+.atau  {
+  padding: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  color: #4A505C;
+  background: white;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  top: -1.0em;
+}
